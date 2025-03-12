@@ -63,7 +63,7 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
         top: 50px;
         left: 10px;
         background: #fff;
-        padding: 15px 20px; /* 内边距，避免太贴边 */
+        padding: 10px 15px; /* 内边距，避免太贴边 */
         border: 1px solid #ddd;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
