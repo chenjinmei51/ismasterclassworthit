@@ -135,38 +135,6 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
     color: #007bff;
 }
 
-/* 手机菜单按钮 */
-.menu-toggle {
-    display: none;
-    font-size: 1.8em;
-    cursor: pointer;
-}
-
-/* 手机端折叠菜单样式 */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    #menu {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        position: absolute;
-        top: 60px;
-        right: 10px;
-        background: #fff;
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-    }
-
-    #menu.show {
-        display: flex;
-    }
-}
 /* PC端样式不变 */
 .nav-container {
     display: flex;
