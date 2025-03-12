@@ -146,43 +146,52 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
     padding: 10px 0;
 }
 
-/* 手机菜单按钮 */
+/* 手机菜单按钮固定右上角 */
 .menu-toggle {
-    display: none;
+    display: none; /* 默认隐藏，PC 不显示 */
     font-size: 1.8em;
     cursor: pointer;
+    padding: 10px;
 }
 
-/* 手机适配 */
+/* 手机菜单按钮 + 菜单 */
 @media (max-width: 768px) {
+    /* 显示按钮 */
     .menu-toggle {
         display: block;
-        top: 15px;
-        right: 15px;
-        z-index: 2000;
+        position: fixed; /* 全屏固定 */
+        top: 10px;
+        right: 10px;
+        z-index: 3000; /* 最上层 */
     }
 
+    /* 折叠菜单 */
     #menu {
         display: none;
         flex-direction: column;
         gap: 10px;
-        top: 50px; /* 菜单下拉 */
-        right: 15px;
+        position: fixed; /* 全屏固定 */
+        top: 50px; /* 挨着按钮 */
+        right: 10px;
         background: #fff;
         padding: 15px;
         border: 1px solid #ddd;
         border-radius: 8px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
+        z-index: 2000;
     }
 
+    /* 点击后显示菜单 */
     #menu.show {
         display: flex;
     }
-    /* header 顶部留白，避免被菜单盖住 */
+
+    /* 避免菜单遮住 header */
     header {
-        padding-top: 20px;
+        padding-top: 70px; /* 留出空间 */
     }
+}
+
 }
 
 
