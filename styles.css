@@ -101,7 +101,7 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
 /* 导航栏基础样式 */
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-start;
     align-items: center;
     width: 90%;
     max-width: 1000px;
@@ -170,7 +170,7 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
 /* PC端样式不变 */
 .nav-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
     width: 90%;
     max-width: 1000px;
