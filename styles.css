@@ -85,8 +85,8 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
     .btn { padding: 10px 15px; font-size: 1em; }
 }
 .hero-image {
-    width: 100%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 1000px;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 12px; /* 圆角 */
