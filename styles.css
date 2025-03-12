@@ -65,8 +65,8 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
     }
 }
 
-/* 导航栏整体 */
-nav {
+/* PC 专属导航整体 */
+.desktop-nav {
     background: #000; /* 黑色背景 */
     padding: 15px 0;
     width: 90%; /* 和 main 区域对齐 */
@@ -76,9 +76,9 @@ nav {
     border-radius: 8px;
 }
 
-/* 菜单链接 */
-nav a {
-    color: white !important; /* 强制白色 */
+/* PC 导航链接 */
+.desktop-nav a {
+    color: white; /* 白色文字 */
     text-decoration: none;
     padding: 10px 15px;
     font-weight: bold;
@@ -86,15 +86,23 @@ nav a {
     border-radius: 5px;
     display: inline-block;
 }
-#menu a {
-    color: black !important; /* 强制黑色，覆盖 nav a 的 white */
+
+/* PC 悬停效果 */
+.desktop-nav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #D4AF37; /* 金色 */
 }
 
-/* 悬停效果 */
-nav a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    color: #D4AF37 !important; /* 金色，强制优先 */
+/* 手机菜单链接 */
+#menu a {
+    color: black; /* 黑色文字 */
 }
+
+/* 手机菜单悬停效果 */
+#menu a:hover {
+    background: rgba(0, 0, 0, 0.05); /* 淡灰 hover */
+}
+
 
 
 
