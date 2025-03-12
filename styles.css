@@ -157,7 +157,6 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
-        position: absolute;
         top: 15px;
         right: 15px;
         z-index: 2000;
@@ -167,7 +166,6 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
         display: none;
         flex-direction: column;
         gap: 10px;
-        position: absolute;
         top: 50px; /* 菜单下拉 */
         right: 15px;
         background: #fff;
@@ -180,6 +178,10 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
 
     #menu.show {
         display: flex;
+    }
+    /* header 顶部留白，避免被菜单盖住 */
+    header {
+        padding-top: 20px;
     }
 }
 
