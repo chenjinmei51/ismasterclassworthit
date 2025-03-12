@@ -161,7 +161,7 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
         display: block;
         position: fixed; /* 全屏固定 */
         top: 10px;
-        right: 10px;
+        left: 10px;
         z-index: 3000; /* 最上层 */
     }
 
@@ -172,7 +172,7 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
         gap: 10px;
         position: fixed; /* 全屏固定 */
         top: 50px; /* 挨着按钮 */
-        right: 10px;
+        left: 10px;
         background: #fff;
         padding: 15px;
         border: 1px solid #ddd;
