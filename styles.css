@@ -1,26 +1,28 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: Arial, sans-serif; background-color: #fff; color: #000; line-height: 1.8; }
-header { text-align: center; padding: 20px 20px 10px 20px; ; background-color: #f9f9f9; margin-bottom: 20px; border-bottom: 1px solid #ddd; }
-header h1 { font-size: clamp(1.2em, 4vw, 2.5em);  margin-bottom: 5px;white-space: nowrap; }
-header p { font-size: 1.2em; color: #333;margin-bottom: 5px; }
-nav { display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 20px; background-color: #fff; padding: 5px 10px; border-bottom: 1px solid #ddd; }
-nav a { color: #000; text-decoration: none; font-size: 1.1em; font-weight: bold;line-height: 0.5;padding: 5px 8px; transition: color 0.3s ease; }
+header { text-align: center; padding: 20px 20px 10px 20px; background-color: #f9f9f9; margin-bottom: 20px; border-bottom: 1px solid #ddd; }
+header h1 { font-size: clamp(1.2em, 4vw, 2.5em); margin-bottom: 10px; white-space: nowrap; }
+header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
+nav {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    background-color: #fff;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+nav a { color: #000; text-decoration: none; font-size: 1em; font-weight: bold; line-height: 1.2; padding: 5px 8px; transition: color 0.3s ease; }
 nav a:hover { color: #007bff; text-decoration: underline; }
 main { width: 90%; max-width: 1000px; margin: 30px auto; padding: 20px; }
-section { margin-bottom: 40px; }
-table { width: 100%; border-collapse: collapse; margin-top: 15px; overflow-x: auto; display: block; }
-table, th, td { border: 1px solid #ccc; padding: 12px; text-align: left; }
-th { background: #f0f0f0; }
-.btn { display: inline-block; padding: 12px 25px; margin-top: 15px; color: #fff; background: #007bff; text-decoration: none; border-radius: 5px; transition: background 0.3s ease; }
-.btn:hover { background: #0056b3; }
-iframe { width: 100%; max-width: 600px; margin: 20px auto; display: block; border: 1px solid #ccc; border-radius: 8px; }
 footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin-top: 50px; color: #333; background-color: #f9f9f9; }
-
-/* Mobile responsive adjustments */
+/* Mobile responsive */
 @media (max-width: 768px) {
     header h1 { font-size: 1.8em; }
     header p { font-size: 1em; }
-    nav a { font-size: 1em; padding: 10px 5px; }
+    nav a { font-size: 1em; padding: 5px 8px; }
     .btn { padding: 10px 15px; font-size: 1em; }
-    iframe { height: 200px; }
 }
