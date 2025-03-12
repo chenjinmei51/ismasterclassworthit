@@ -76,6 +76,9 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
 
     #menu a {
         color: black;
+        padding: 8px 10px; /* ✅ 控制菜单项自身空间 */
+        display: block; /* ✅ 让链接充满点击区域 */
+        border-radius: 4px; /* ✅ 美化 */
     }
 
     #menu a:hover {
