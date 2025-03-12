@@ -86,6 +86,9 @@ nav a {
     border-radius: 5px;
     display: inline-block;
 }
+#menu a {
+    color: black;
+}
 
 /* 悬停效果 */
 nav a:hover {
