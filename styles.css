@@ -74,7 +74,7 @@ nav {
 
 /* 导航菜单链接 */
 nav a {
-    color: white; /* 白色字体 */
+    color: #ffffff; /* 白色字体 ✅ */
     text-decoration: none;
     padding: 10px 15px;
     font-weight: bold;
@@ -85,9 +85,10 @@ nav a {
 
 /* 鼠标悬停效果 */
 nav a:hover {
-    background: rgba(255, 255, 255, 0.1); /* 鼠标移上去浅灰色背景 */
-    color: white;
+    background: rgba(255, 255, 255, 0.1); /* 浅灰 hover 背景 */
+    color: #ffffff; /* 保持白色文字 ✅ */
 }
+
 
 
 
