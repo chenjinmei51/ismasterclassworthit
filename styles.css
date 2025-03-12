@@ -69,29 +69,30 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
 nav {
     background: #000; /* 黑色背景 */
     padding: 15px 0;
-    width: 90%; /* 和 main 一样 */
-    max-width: 1000px; /* 和 main 一样 */
-    margin: 0 auto; /* 居中 */
-    text-align: left; /* 左对齐 */
-    border-radius: 8px; /* 可选圆角 */
+    width: 90%; /* 和 main 区域对齐 */
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+    border-radius: 8px;
 }
 
-/* 导航菜单链接 */
+/* 菜单链接 */
 nav a {
-    color: #ffffff; /* 白色字体 ✅ */
+    color: white !important; /* 强制白色 */
     text-decoration: none;
     padding: 10px 15px;
     font-weight: bold;
     transition: background 0.3s, color 0.3s;
-    border-radius: 5px; /* 稍微圆角 */
-    display: inline-block; /* 让 padding 生效 */
+    border-radius: 5px;
+    display: inline-block;
 }
 
-/* 鼠标悬停效果 */
+/* 悬停效果 */
 nav a:hover {
-    background: rgba(255, 255, 255, 0.1); /* 浅灰 hover 背景 */
-    color: #ffffff; /* 保持白色文字 ✅ */
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
 }
+
 
 
 
