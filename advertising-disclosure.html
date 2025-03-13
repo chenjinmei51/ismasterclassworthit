@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn how IsMasterClassWorthIt.com earns commissions, maintains transparency, and complies with FTC advertising guidelines.">
+    <title>Advertising Disclosure | Is MasterClass Worth It?</title>
+    <link rel="stylesheet" href="/styles.css?v=5">
+</head>
+<body>
+
+<!-- 手机菜单按钮 -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<!-- 顶部导航 -->
+<nav class="desktop-nav">
+    <ul id="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/reviews/index.html">MasterClass Reviews</a></li>
+        <li><a href="/best-courses/index.html">Best Courses</a></li>
+        <li><a href="/videos/index.html">Videos</a></li>
+        <li><a href="/deals/index.html">Deals</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero-header">
+    <h1>Advertising Disclosure</h1>
+    <p>Learn how we earn commissions and maintain transparency with our readers.</p>
+</header>
+
+<main>
+    <h2>Our Commitment to Transparency</h2>
+    <p>At <strong>IsMasterClassWorthIt.com</strong>, our mission is to provide honest, in-depth reviews and guides to help you decide whether MasterClass is right for you. To support the work that goes into researching and creating content, we sometimes partner with brands and may earn a commission when you click affiliate links on our site — but at no extra cost to you.</p>
+
+    <h2>Affiliate Links and Recommendations</h2>
+    <p>Many of the links on our website are affiliate links, especially those leading to MasterClass subscriptions and deals. This means if you choose to make a purchase through one of our links, we may receive a commission that helps us continue to create valuable content.</p>
+    <p>However, we only recommend courses, products, or services that we have personally explored or believe could genuinely benefit our readers. Our reviews and recommendations are based on real experiences, not influenced by commissions.</p>
+
+    <h2>How Affiliate Commissions Work</h2>
+    <p>When you click on an affiliate link and make a purchase, a small percentage of that sale is credited to us. This allows us to maintain this site, pay for hosting, and continue offering free, high-quality content.</p>
+    <p>To be clear, the price you pay for MasterClass or any product we mention is the same whether you use our link or not — there are no additional costs to you.</p>
+
+    <h2>Partnership with MasterClass</h2>
+    <p><strong>IsMasterClassWorthIt.com</strong> is an independent website. While we participate in the official MasterClass affiliate program, we are not owned, operated, or directly sponsored by MasterClass. Our reviews are independent, based on personal experiences and thorough research.</p>
+
+    <h2>Sponsored Content</h2>
+    <p>Currently, we do not accept paid sponsorships for content. If in the future we publish sponsored content, we will clearly label it as such to maintain full transparency.</p>
+
+    <h2>Why This Disclosure Matters</h2>
+    <p>We value the trust of our readers and believe transparency is essential. By disclosing our affiliate relationships, we aim to give you full clarity on how we operate. You should always feel confident that our content is honest, unbiased, and designed to serve you — not advertisers.</p>
+
+    <h2>Questions?</h2>
+    <p>If you have any questions about this disclosure or how our affiliate relationships work, please <a href="/contact.html">contact us here</a>. We're always happy to provide further information.</p>
+
+</main>
+
+<!-- 页脚 -->
+<footer>
+    <p>&copy; 2025 IsMasterClassWorthIt.com |
+        <a href="/privacy-policy.html">Privacy Policy</a> |
+        <a href="/terms.html">Terms</a> |
+        <a href="/contact.html">Contact</a> |
+        <a href="/about.html">About</a> |
+        <a href="/disclaimer.html">Disclaimer</a> |
+        <a href="/advertising-disclosure.html">Advertising Disclosure</a>
+    </p>
+</footer>
+
+<script>
+    // 菜单展开/关闭
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    }
+
+    // 点击外部区域关闭菜单
+    document.addEventListener('click', function(event) {
+        var menu = document.getElementById('menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove('show');
+        }
+    });
+
+    // 点击菜单链接关闭
+    document.querySelectorAll('#menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            document.getElementById('menu').classList.remove('show');
+        });
+    });
+</script>
+
+</body>
+</html>
