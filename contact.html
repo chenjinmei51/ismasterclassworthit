@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact IsMasterClassWorthIt.com. We'd love to hear from you!">
+    <title>Contact | Is MasterClass Worth It?</title>
+    <link rel="stylesheet" href="/styles.css?v=5">
+</head>
+<body>
+
+<!-- 手机菜单按钮 -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<!-- 导航栏 -->
+<nav class="desktop-nav">
+    <ul id="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/reviews/index.html">MasterClass Reviews</a></li>
+        <li><a href="/best-courses/index.html">Best Courses</a></li>
+        <li><a href="/videos/index.html">Videos</a></li>
+        <li><a href="/deals/index.html">Deals</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero-header">
+    <h1>Contact Us</h1>
+    <p>We'd love to hear from you! Feel free to reach out anytime.</p>
+</header>
+
+<main>
+    <h2>Get in Touch</h2>
+    <p>If you have any questions, feedback, or collaboration opportunities, please don't hesitate to contact us. Whether you want to know more about MasterClass, share your learning experience, or discuss affiliate partnerships — we are here to help!</p>
+
+    <h3>Email Us</h3>
+    <p><strong>Email:</strong> <a href="mailto:support@ismasterclassworthit.com">support@ismasterclassworthit.com</a></p>
+
+    <h3>Contact Form (Optional)</h3>
+    <form action="mailto:support@ismasterclassworthit.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <h3>Response Time</h3>
+    <p>We typically respond within 24-48 hours. Thank you for reaching out!</p>
+</main>
+
+<!-- 页脚 -->
+<footer>
+    <p>&copy; 2025 IsMasterClassWorthIt.com |
+        <a href="/privacy-policy.html">Privacy Policy</a> |
+        <a href="/terms.html">Terms</a> |
+        <a href="/contact.html">Contact</a> |
+        <a href="/about.html">About</a> |
+        <a href="/disclaimer.html">Disclaimer</a>
+    </p>
+</footer>
+
+<script>
+    // 菜单展开/关闭
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    }
+
+    // 点击外部区域关闭菜单
+    document.addEventListener('click', function(event) {
+        var menu = document.getElementById('menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove('show');
+        }
+    });
+
+    // 点击菜单链接关闭
+    document.querySelectorAll('#menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            document.getElementById('menu').classList.remove('show');
+        });
+    });
+</script>
+
+</body>
+</html>
