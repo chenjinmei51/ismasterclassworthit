@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about IsMasterClassWorthIt.com and our mission to provide honest MasterClass reviews.">
+    <title>About Us | Is MasterClass Worth It?</title>
+    <link rel="stylesheet" href="/styles.css?v=5">
+</head>
+<body>
+
+<!-- 手机菜单按钮 -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<!-- 导航栏 -->
+<nav class="desktop-nav">
+    <ul id="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/reviews/index.html">MasterClass Reviews</a></li>
+        <li><a href="/best-courses/index.html">Best Courses</a></li>
+        <li><a href="/videos/index.html">Videos</a></li>
+        <li><a href="/deals/index.html">Deals</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero-header">
+    <h1>About Us</h1>
+    <p>Discover the story behind IsMasterClassWorthIt.com and how we help you make smarter learning choices.</p>
+</header>
+
+<main>
+    <h2>Our Mission</h2>
+    <p>Welcome to <strong>IsMasterClassWorthIt.com</strong> — a place where real people share real experiences with MasterClass. Our mission is simple: to provide honest, in-depth reviews and guides to help you decide if MasterClass is right for you and your family.</p>
+
+    <h2>Who Am I?</h2>
+    <p>Hi! I'm <strong>Robert Larkin</strong>, the creator of this site. I'm a father, lifelong learner, and someone who was once skeptical about MasterClass. Like many of you, I wondered: <em>Is MasterClass really worth the money?</em></p>
+    <p>That question led me to try MasterClass myself — and I was surprised by how much value I found. From learning to cook with Gordon Ramsay to fixing my sleep with Matthew Walker, MasterClass has been an unexpected but rewarding journey. Even my son got in on the learning by improving his basketball skills with Stephen Curry!</p>
+
+    <h2>Why This Website?</h2>
+    <p>When I first looked into MasterClass, I found it hard to get real, honest opinions. Everything felt like it was written by marketers, not actual users. That's why I created this website — to share my personal experiences, give you honest reviews, and help answer the big question: <strong>Is MasterClass worth it?</strong></p>
+    <p>You'll find:</p>
+    <ul>
+        <li>Detailed MasterClass reviews</li>
+        <li>Comparisons of different subscription plans</li>
+        <li>Best course recommendations for beginners</li>
+        <li>Tips on how to get the most out of your MasterClass membership</li>
+        <li>And much more!</li>
+    </ul>
+
+    <h2>Our Promise</h2>
+    <p><strong>Honesty First.</strong> All the content here is based on real experience. We only recommend what we've tried and what we think will genuinely help you.</p>
+    <p><strong>No Fluff. No Fake Reviews.</strong> We're here to save you time and money — and hopefully inspire you to learn something new.</p>
+
+    <h2>Let's Connect</h2>
+    <p>Have questions, feedback, or a story to share? I'd love to hear from you. Please reach out through our <a href="/contact.html">Contact Page</a>.</p>
+
+    <h3>Follow Us</h3>
+    <ul>
+        <li><a href="mailto:support@ismasterclassworthit.com">Email: support@ismasterclassworthit.com</a></li>
+        <li><a href="/contact.html">Contact Page</a></li>
+    </ul>
+
+    <p>Thank you for stopping by — and happy learning!</p>
+</main>
+
+<!-- 页脚 -->
+<footer>
+    <p>&copy; 2025 IsMasterClassWorthIt.com |
+        <a href="/privacy-policy.html">Privacy Policy</a> |
+        <a href="/terms.html">Terms</a> |
+        <a href="/contact.html">Contact</a> |
+        <a href="/about.html">About</a> |
+        <a href="/disclaimer.html">Disclaimer</a>
+    </p>
+</footer>
+
+<script>
+    // 菜单展开/关闭
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    }
+
+    // 点击外部区域关闭菜单
+    document.addEventListener('click', function(event) {
+        var menu = document.getElementById('menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove('show');
+        }
+    });
+
+    // 点击菜单链接关闭
+    document.querySelectorAll('#menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            document.getElementById('menu').classList.remove('show');
+        });
+    });
+</script>
+
+</body>
+</html>
