@@ -1,7 +1,38 @@
 html {
     scroll-behavior: smooth;
 }
+/* 作者信息区域 */
+.author-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
 
+/* 作者头像 */
+.author-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* 圆形头像 */
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+/* 作者文字 */
+.author-info {
+    max-width: 600px;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.author-info strong {
+    font-size: 1.1em;
+    color: #000;
+}
 /* 目录美化 */
 .toc {
     background: #f9f9f9;
