@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read the Terms and Conditions of IsMasterClassWorthIt.com.">
+    <title>Terms and Conditions | Is MasterClass Worth It?</title>
+    <link rel="stylesheet" href="/styles.css?v=5">
+</head>
+<body>
+
+<!-- 手机菜单按钮 -->
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<!-- 导航栏 -->
+<nav class="desktop-nav">
+    <ul id="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/reviews/index.html">MasterClass Reviews</a></li>
+        <li><a href="/best-courses/index.html">Best Courses</a></li>
+        <li><a href="/videos/index.html">Videos</a></li>
+        <li><a href="/deals/index.html">Deals</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero-header">
+    <h1>Terms and Conditions</h1>
+    <p>Last updated: March 12, 2025</p>
+</header>
+
+<main>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing and using IsMasterClassWorthIt.com, you accept and agree to be bound by the terms and provisions of this agreement. If you do not agree to these terms, please do not use our website.</p>
+
+    <h2>2. Intellectual Property</h2>
+    <p>All content on this site, including but not limited to text, graphics, logos, and images, is the property of IsMasterClassWorthIt.com unless otherwise stated. You may not reproduce, distribute, or exploit any content without written permission.</p>
+
+    <h2>3. Affiliate Disclosure</h2>
+    <p>IsMasterClassWorthIt.com participates in affiliate marketing programs, including the MasterClass Affiliate Program. This means we may earn a commission when you purchase products or services through our links. This does not affect the price you pay.</p>
+
+    <h2>4. Disclaimer of Warranties</h2>
+    <p>All content provided on IsMasterClassWorthIt.com is for informational purposes only. We make no representations as to the accuracy or completeness of any information on this site. Your use of any information is at your own risk.</p>
+
+    <h2>5. Limitation of Liability</h2>
+    <p>IsMasterClassWorthIt.com shall not be held liable for any direct, indirect, incidental, consequential, or punitive damages arising from your use of this site.</p>
+
+    <h2>6. Third-Party Links</h2>
+    <p>Our site may contain links to third-party websites. We are not responsible for the content or practices of these external sites and encourage you to read their privacy policies and terms.</p>
+
+    <h2>7. Changes to Terms</h2>
+    <p>We reserve the right to modify these terms at any time. Please check this page periodically for updates. Continued use of the site after changes are posted constitutes your acceptance of those changes.</p>
+
+    <h2>8. Contact Information</h2>
+    <p>If you have any questions about these Terms and Conditions, please <a href="/contact.html">contact us</a>.</p>
+</main>
+
+<!-- 页脚 -->
+<footer>
+    <p>&copy; 2025 IsMasterClassWorthIt.com |
+        <a href="/privacy-policy.html">Privacy Policy</a> |
+        <a href="/terms.html">Terms</a> |
+        <a href="/contact.html">Contact</a> |
+        <a href="/about.html">About</a> |
+        <a href="/disclaimer.html">Disclaimer</a>
+    </p>
+</footer>
+
+<script>
+    // 菜单展开/关闭
+    function toggleMenu() {
+        var menu = document.getElementById('menu');
+        menu.classList.toggle('show');
+    }
+
+    // 点击外部区域关闭菜单
+    document.addEventListener('click', function(event) {
+        var menu = document.getElementById('menu');
+        var menuToggle = document.querySelector('.menu-toggle');
+        if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+            menu.classList.remove('show');
+        }
+    });
+
+    // 点击菜单链接关闭
+    document.querySelectorAll('#menu a').forEach(function(link) {
+        link.addEventListener('click', function() {
+            document.getElementById('menu').classList.remove('show');
+        });
+    });
+</script>
+
+</body>
+</html>
