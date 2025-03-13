@@ -207,6 +207,19 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
     height: auto;
     display: block;
 }
+/* 表格外包裹层，支持横向滚动 */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px auto;
+}
+
+/* 追加到 price-table */
+.price-table {
+    min-width: 600px; /* 确保桌面宽屏显示时不太窄 */
+}
+
+
 /* 美化 MasterClass 价格表格 */
 .price-table {
     width: 100%;
