@@ -207,3 +207,41 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
     height: auto;
     display: block;
 }
+/* 美化 MasterClass 价格表格 */
+.price-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 1em;
+}
+
+.price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 12px 8px;
+}
+
+.price-table th {
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+}
+
+.price-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.price-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* 表格内链接美化 */
+.price-table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.price-table a:hover {
+    text-decoration: underline;
+}
