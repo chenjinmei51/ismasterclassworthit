@@ -297,3 +297,17 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
 .price-table a:hover {
     text-decoration: underline;
 }
+/* 统一段落样式 */
+p {
+  margin-bottom: 20px; /* 每段之间空隙 */
+  line-height: 1.8; /* 行间距 */
+  font-size: 16px; /* 字体大小 */
+}
+
+/* 主体宽度，控制文字区域不至于太宽 */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
