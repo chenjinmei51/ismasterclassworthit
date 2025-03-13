@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* 目录美化 */
 .toc {
     background: #f9f9f9;
@@ -31,7 +35,7 @@
 
 .toc a:hover {
     text-decoration: underline;
-    color: #0056b3;
+    color: #D4AF37; /* 金色悬浮 */
 }
 
 /* 默认重置 */
