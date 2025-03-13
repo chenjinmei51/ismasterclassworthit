@@ -4,7 +4,7 @@ html {
 /* 作者信息区域 */
 .author-box {
     display: flex;
-    align-items: center;
+    align-items: left;
     gap: 15px;
     margin: 30px auto;
     padding: 20px;
@@ -40,7 +40,7 @@ html {
 @media (max-width: 768px) {
     .author-box {
         flex-direction: column; /* 上下排列 */
-        text-align: center; /* 居中 */
+        text-align: left; /* 居中 */
     }
 
     .author-photo {
