@@ -190,7 +190,55 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
 }
 
 /* 内容区 */
-main { width: 90%; max-width: 1000px; margin: 30px auto; padding: 40px; }
+main { width: 90%; max-width: 1000px; margin: 30px auto; padding: 20px; }
+/* 强化 p 间距 */
+main p {
+  margin-bottom: 40px !important;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* 标题样式 */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+/* 列表 */
+ul, ol {
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* 表格 */
+table {
+  margin-bottom: 30px;
+}
+
+/* 手机端适配 */
+@media (max-width: 768px) {
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 16px;
+  }
+
+  main p {
+    margin-bottom: 24px;
+  }
+
+  ul, ol {
+    margin-bottom: 16px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
+}
+
 
 /* footer */
 footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin-top: 50px; color: #333; background-color: #f9f9f9; }
@@ -297,52 +345,3 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
 .price-table a:hover {
     text-decoration: underline;
 }
-/* 统一段落样式 */
-p {
-  margin-bottom: 40px; /* 每段之间空隙 */
-  line-height: 1.8; /* 行间距 */
-  font-size: 16px; /* 字体大小 */
-}
-
-
-/* 全局排版优化 */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 24px;
-  line-height: 1.4;
-}
-
-p {
-  margin-bottom: 24px;
-  line-height: 1.8;
-  font-size: 16px;
-}
-
-ul, ol {
-  margin-bottom: 24px;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-  line-height: 1.7;
-}
-
-table {
-  margin-bottom: 30px;
-}
-
-/* 手机端适配 */
-@media (max-width: 768px) {
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 16px;
-  }
-
-  p, ul, ol {
-    margin-bottom: 16px;
-  }
-
-  li {
-    margin-bottom: 8px;
-  }
-}
-
