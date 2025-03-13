@@ -397,3 +397,12 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
 .price-table a:hover {
     text-decoration: underline;
 }
+/* 内联插图样式 */
+.inline-image {
+    display: block;
+    margin: 0 auto 30px auto; /* 居中 + 下边距 */
+    max-width: 100%; /* 不超出容器 */
+    height: auto; /* 高度等比缩放 */
+    border-radius: 12px; /* 圆角美化 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 微弱阴影 */
+}
