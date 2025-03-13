@@ -299,7 +299,7 @@ footer { text-align: center; padding: 20px 0; border-top: 1px solid #ddd; margin
 }
 /* 统一段落样式 */
 p {
-  margin-bottom: 20px; /* 每段之间空隙 */
+  margin-bottom: 40px; /* 每段之间空隙 */
   line-height: 1.8; /* 行间距 */
   font-size: 16px; /* 字体大小 */
 }
