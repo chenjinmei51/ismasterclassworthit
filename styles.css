@@ -190,11 +190,11 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
 }
 
 /* 内容区 */
-main { width: 90%; max-width: 1000px; margin: 100px auto; padding: 20px; }
+main { width: 90%; max-width: 1000px; margin: 30px auto; padding: 20px; }
 
 /* 强化 p 间距 */
 main p {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   line-height: 1.8;
   font-size: 16px;
 }
@@ -227,7 +227,7 @@ table {
   }
 
   main p {
-    margin-bottom: 40px;
+    margin-bottom: 24px;
   }
 
   ul, ol {
