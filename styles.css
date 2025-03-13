@@ -190,54 +190,8 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
 }
 
 /* 内容区 */
-main { width: 90%; max-width: 1000px; margin: 30px auto; padding: 20px; }
-/* 强化 p 间距 */
-main p {
-  margin-bottom: 100px !important;
-  line-height: 1.8;
-  font-size: 16px;
-}
+main { width: 90%; max-width: 1000px; margin: 100px auto; padding: 20px; }
 
-/* 标题样式 */
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 24px;
-  line-height: 1.4;
-}
-
-/* 列表 */
-ul, ol {
-  margin-bottom: 24px;
-  padding-left: 20px;
-}
-
-li {
-  margin-bottom: 10px;
-  line-height: 1.7;
-}
-
-/* 表格 */
-table {
-  margin-bottom: 30px;
-}
-
-/* 手机端适配 */
-@media (max-width: 768px) {
-  h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 16px;
-  }
-
-  main p {
-    margin-bottom: 24px;
-  }
-
-  ul, ol {
-    margin-bottom: 16px;
-  }
-
-  li {
-    margin-bottom: 8px;
-  }
-}
 
 
 /* footer */
