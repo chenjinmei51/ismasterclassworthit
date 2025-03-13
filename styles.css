@@ -193,7 +193,7 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
 main { width: 90%; max-width: 1000px; margin: 30px auto; padding: 20px; }
 /* 强化 p 间距 */
 main p {
-  margin-bottom: 40px !important;
+  margin-bottom: 100px !important;
   line-height: 1.8;
   font-size: 16px;
 }
