@@ -176,9 +176,9 @@ header p { font-size: 1.2em; color: #333; margin-bottom: 5px; }
     .menu-toggle {
         display: block;
         position: fixed;
-        top: 10px;
-        left: 10px;
-        z-index: 3000;
+        top: 20px;
+        left: 20px;
+        z-index: 9999;
         font-size: 1.8em;
         cursor: pointer;
         padding: 10px;
