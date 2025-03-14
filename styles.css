@@ -1,6 +1,23 @@
 html {
     scroll-behavior: smooth;
 }
+/* 顶部 Banner 样式 */
+.hero-banner-top {
+    width: 90%; /* 跟 main 同步 */
+    max-width: 1000px; /* 保持整体宽度 */
+    margin: 30px auto; /* 居中 */
+    overflow: hidden;
+    border-radius: 12px; /* 圆角 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 阴影美化 */
+}
+
+.hero-banner-top img {
+    width: 100%; /* 自适应宽度 */
+    height: auto; /* 按比例 */
+    display: block; /* 去除下方间隙 */
+    border-radius: 12px; /* 圆角 */
+}
+
 /* 作者信息区域 */
 .author-box {
     display: flex;
