@@ -3,9 +3,10 @@ html {
 }
 /* 顶部 Banner 样式 */
 .hero-banner-top {
+    
     width: 90%; /* 跟 main 同步 */
     max-width: 1000px; /* 保持整体宽度 */
-    margin: 30px auto; /* 居中 */
+    margin: 60px auto 30px auto; /* 上右下左 */
     overflow: hidden;
     border-radius: 12px; /* 圆角 */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 阴影美化 */
