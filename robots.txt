@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block sensitive or temporary directories
+Disallow: /admin/
+Disallow: /login/
+Disallow: /test/
+Disallow: /temp/
+
+# Sitemap location to help search engines index faster
+Sitemap: https://ismasterclassworthit.com/sitemap.xml
